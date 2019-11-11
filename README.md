@@ -46,16 +46,32 @@ Two Input Widget (Drop down list and Slide Bar).
 Using Reactive function.
 Server Business logic (Subsetting data frame based on input).
 Full help page (Documentation).
-Shiny Applicatio Link : https://omersect.shinyapps.io/project/ Github Repository Link : https://github.com/omershect/Course-Project-Shiny-Application-and-Reproducible-Pitch
+
+Shiny Applicatio Link : https://omersect.shinyapps.io/project/ @@@@PONER LINK APLICACION@@@@
+
+Github Repository Link : https://github.com/yelcomartinez/Course-Project-Shiny-Application-and-Reproducible-Pitch/
 
 # The Data
 
-Data link: https://data.wprdc.org/datastore/dump/bf8b3c7e-8d60-40df-9134-21606a451c1a
-Data contains information on all accidents in Allegheny County in 2017.
-Data used:
-- Geo Location data. - Months of the Accident. - AUTOMOBILE_COUNT - the number of cars involved. - FATAL_COUNT - Total number of death. - ILLEGAL_DRUG_RELATED - Ilegal drug involvement. - DRINKING_DRIVER Number of Drunk People involved in the car accident. - INJURY_COUNT - Number of injuries. - Fatal And INJURY - Will be used to classifying the type of the accident And create different Icons.
-Data and Server calculations
-The following calculations are done in the server :
+Motor Trend Car Road Tests (mtcars)
+
+Description: The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).
+
+Format: A data frame with 32 observations on 11 (numeric) variables.
+
+[, 1]	mpg	Miles/(US) gallon
+[, 2]	cyl	Number of cylinders
+[, 3]	disp	Displacement (cu.in.)
+[, 4]	hp	Gross horsepower
+[, 5]	drat	Rear axle ratio
+[, 6]	wt	Weight (1000 lbs)
+[, 7]	qsec	1/4 mile time
+[, 8]	vs	Engine (0 = V-shaped, 1 = straight)
+[, 9]	am	Transmission (0 = automatic, 1 = manual)
+[,10]	gear	Number of forward gears
+[,11]	carb	Number of carburetors
+
+Source: Henderson and Velleman (1981), Building multiple regression models interactively. Biometrics, 37, 391–411.
 
 # Load data.
 Subset data - remove the accidents with zero cars involved.
