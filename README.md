@@ -47,7 +47,7 @@ Using Reactive function.
 Server Business logic (Subsetting data frame based on input).
 Full help page (Documentation).
 
-Shiny Applicatio Link : https://omersect.shinyapps.io/project/ @@@@PONER LINK APLICACION@@@@
+Shiny Applicatio Link : https://yelcomm.shinyapps.io/Project/
 
 Github Repository Link : https://github.com/yelcomartinez/Course-Project-Shiny-Application-and-Reproducible-Pitch/
 
