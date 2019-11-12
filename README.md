@@ -73,29 +73,47 @@ Format: A data frame with 32 observations on 11 (numeric) variables.
 
 Source: Henderson and Velleman (1981), Building multiple regression models interactively. Biometrics, 37, 391–411.
 
-# Load data.
-Subset data - remove the accidents with zero cars involved.
-Remove NA items.
-Create new columns which classify the accident (Death/Injury/None).
-Check the Min and Max cars number involved and pass it to the slider input.
-Slice the dataset dynamically based on Month selection and the number of cars selection.
-Data and Server calculation (Cont.)
-Data str
-`'data.frame':	9690 obs. of  12 variables:
- $ latitude        : num  40.5 40.4 40.4 40.4 40.5 ...
- $ longitude       : num  -79.9 -80 -80 -79.8 -79.9 ...
- $ Month Crash     : int  1 1 1 1 1 1 1 1 1 1 ...
- $ No.Cars.Involved: int  2 1 1 1 4 2 2 1 2 3 ...
- $ Drinking.Driver : int  0 0 0 0 1 0 0 0 0 0 ...
- $ Death.Count     : int  0 0 0 0 0 0 0 0 0 0 ...
- $ Drug.Involved   : int  0 0 0 0 0 0 0 0 0 0 ...
- $ Injury.Count    : int  0 0 2 0 0 0 1 0 1 1 ...
- $ Fatality.ind    : int  0 0 0 0 0 0 0 0 0 0 ...
- $ Injury.ind      : int  0 0 1 0 0 0 1 0 1 1 ...
- $ Month.Crash.Name: chr  "January" "January" "January" "January" ...
- $ Death_Injuries  : Factor w/ 3 levels "Death","Injury",..: 3 3 2 3 3 3 2 3 2 2 ...`
+# Data Summary
 
-# Summary of accidents per classification
-
- `Death Injury   None 
-    32   3997   5661 `
+ `mpg             cyl       
+ Min.   :10.40   Min.   :4.000  
+ 1st Qu.:15.43   1st Qu.:4.000  
+ Median :19.20   Median :6.000  
+ Mean   :20.09   Mean   :6.188  
+ 3rd Qu.:22.80   3rd Qu.:8.000  
+ Max.   :33.90   Max.   :8.000  
+      disp             hp       
+ Min.   : 71.1   Min.   : 52.0  
+ 1st Qu.:120.8   1st Qu.: 96.5  
+ Median :196.3   Median :123.0  
+ Mean   :230.7   Mean   :146.7  
+ 3rd Qu.:326.0   3rd Qu.:180.0  
+ Max.   :472.0   Max.   :335.0  
+      drat             wt       
+ Min.   :2.760   Min.   :1.513  
+ 1st Qu.:3.080   1st Qu.:2.581  
+ Median :3.695   Median :3.325  
+ Mean   :3.597   Mean   :3.217  
+ 3rd Qu.:3.920   3rd Qu.:3.610  
+ Max.   :4.930   Max.   :5.424  
+      qsec             vs        
+ Min.   :14.50   Min.   :0.0000  
+ 1st Qu.:16.89   1st Qu.:0.0000  
+ Median :17.71   Median :0.0000  
+ Mean   :17.85   Mean   :0.4375  
+ 3rd Qu.:18.90   3rd Qu.:1.0000  
+ Max.   :22.90   Max.   :1.0000  
+       am              gear      
+ Min.   :0.0000   Min.   :3.000  
+ 1st Qu.:0.0000   1st Qu.:3.000  
+ Median :0.0000   Median :4.000  
+ Mean   :0.4062   Mean   :3.688  
+ 3rd Qu.:1.0000   3rd Qu.:4.000  
+ Max.   :1.0000   Max.   :5.000  
+      carb      
+ Min.   :1.000  
+ 1st Qu.:2.000  
+ Median :2.000  
+ Mean   :2.812  
+ 3rd Qu.:4.000  
+ Max.   :8.000   `
